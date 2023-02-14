@@ -8,25 +8,26 @@
     <meta name="author" content="Marcelo">
     <meta name="description" content="estudo de HTML">
     <meta name="keywords" content="HTML">
+    <link rel="stylesheet" href="css/style.css" >
 </head>
 
 <body>
     <div id="principal">
-        <header>
+        <header class="hero">
             <nav>
                 <ul>
-                    <li>ínicio</li>
-                    <li>quem sou eu</li>
-                    <li>contato</li>
+                    <li><a href="#">ínicio</a></li>
+                    <li><a href="#">quem sou eu</a></li>
+                    <li><a href="#">contato</a></li>
                 </ul>
             </nav>
-            <div>
+            <div class="hero-content">
                 <h1>curso web fundamentos</h1>
                 <p>Aprenda HTML, CSS e JavaScript</p>
             </div>
         </header>
         <main>
-            <section>
+            <section class="content-section">
                 <div class="card">
                     <img src="imagens/card_01.png" alt="card 1">
                     <p>Seletores</p>
@@ -40,16 +41,16 @@
                     <p>Fontes e ícones</p>
                 </div>
             </section>
-            <section>
+            <section class="content-section">
                 <article>
-                    <header><h2>Titulo</h2></header>
+                    <header class="content-header"><h2>Titulo</h2></header>
                     <p>primeiro paragrafo de exemplo</p>
                     <p>Segundo paragarfo de exemplo</p>
                 </article>
                 
             </section>
         </main>
-        <footer>
+        <footer class="footer">
             <p>Copyright &copy; 2023
             </p>
         </footer>
