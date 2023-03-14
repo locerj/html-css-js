@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--doctype informa a versão do HTML pro browser-->
+<html lang="pt-br">
+    <head>
+        <title>Página de exemplo para estrutura basica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Marcelo">
+        <meta name="description" content="estudo de HTML">
+        <meta name="keywords" content="HTML">
+
+        <style>
+           li ul{
+                height: 0;
+                overflow: hidden;
+                transition: height .5s;
+            }
+
+            li:hover{
+                background-color: #ccc;
+            }
+
+            li:hover ul {
+                height: 35px;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>item1</li>
+            <li>item2
+                <ul>
+                    <li>item 2.1</li>
+                    <li>item 2.2</li>
+                </ul>
+            </li>
+            <li>item3</li>
+        </ul>
+        <hr>
+
+        <dl>
+            <dt>HTML</dt>
+            <dd>lingua de marcação de hypertexto</dd>
+
+            <dt>CSS</dt>
+            <dd>linguagem para criação de estilo</dd>
+        </dl>
+
+        <hr>
+
+        <dl>
+            <dt>www</dt>
+            <dt>internet</dt>
+            <dd>rede de computadores</dd>
+            <dt>javascript</dt>
+            <dd>linguagem para internet</dd>
+            <dd>script para html</dd>
+        </dl>
+    </body>
+</html>
