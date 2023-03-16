@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--doctype informa a versão do HTML pro browser-->
+<html lang="pt-br">
+    <head>
+        <title>Página de exemplo para estrutura basica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Marcelo">
+        <meta name="description" content="estudo de HTML">
+        <meta name="keywords" content="HTML">
+
+        <style>
+            div {
+                width: 100px;
+                height: 100px;
+                background-color: orange;
+                transition-property: width, height;
+                transition-duration: .5s, 3s;
+                transition-timing-function: cubic-bezier(.6, -.3, .5, 1.5), linear;
+                transition-delay: 0, 1s;
+            }
+
+            div:hover {
+                width: 200px;
+                height: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>estrutura basica</h1>
+
+        <div>1</div>
+    </body>
+</html>
