@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--doctype informa a versão do HTML pro browser-->
+<html lang="pt-br">
+    <head>
+        <title>Página de exemplo para estrutura basica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Marcelo">
+        <meta name="description" content="estudo de HTML">
+        <meta name="keywords" content="HTML">
+
+        
+    </head>
+    <body>
+        <h1>Exemplo de formulário</h1>
+
+        <form action="#" method="POST" class="formLogin">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+
+                <label for="Email">Email</label>
+                <input required type="email" placeholder="digite um email valido">
+                <br>
+
+                <label for="filhos">numero de filhos</label>
+                <input type="number" min="0" max="1000" step=".5">
+                <br>
+
+                <label for="">nascimento</label>
+                <input type="date" min="2023-01-30" max="2123-01-30">
+                <br>
+
+
+                <p>sexo</p>
+                <label>
+                    <input type="radio" name="sexo" value="M">
+                    Masculino
+                </label>
+                <label>  
+                    <input type="radio" name="sexo" value="F">
+                    Feminino
+                </label>
+                
+                <br>
+
+                <input type="hidden" name="expira" value="2018-12-01">
+
+                <label for="">Estado</label>
+                <select>
+                    <option value="0">Selecione</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </select>
+                <br>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Area de interesse</legend>
+                
+                <label for="">
+                    <input type="checkbox" name="html" value="html">
+                    HTML
+                </label>
+                <label for="">
+                    <input type="checkbox" name="CSS" value="CSS">
+                    CSS
+                </label>
+                <label for="">
+                    <input type="checkbox" name="JS" value="JS">
+                    Javascript
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Mensagem</legend>
+                <textarea maxlength="10" style="resize: none;" name="msg" id="" cols="30" rows="10"></textarea>
+                <textarea readonly style="resize: none;" name="contrato" id="" cols="30" rows="10">Termo do contrato</textarea>
+                <label for=""><input type="checkbox" checked>Li e aceito</label>
+
+                <input type="range" min="0" max="10" step=".5">
+                <input type="time">
+                <input type="color">
+
+                <select name="" id="" multiple size="4">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                </select>
+            </fieldset>
+            <br>
+
+            <label for="Enviar arquivo"></label>
+            <input type="file">
+
+            <br>
+
+            <input type="submit" value="MANDAR">
+            <input type="button" value="buão">
+            <input type="reset" value="reset">
+
+
+            
+        </form>
+    </body>
+</html>
